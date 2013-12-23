@@ -62,6 +62,7 @@
 (require 'starter-kit-ruby)
 (require 'starter-kit-js)
 (require 'rspec-mode)
+(require 'rinari)
 
 (regen-autoloads)
 (load custom-file 'noerror)
