@@ -62,6 +62,8 @@
 (require 'starter-kit-ruby)
 (require 'starter-kit-js)
 (require 'rspec-mode)
+
+(add-to-list 'load-path "/Users/user/.emacs.d/")
 (require 'rinari)
 
 (regen-autoloads)
