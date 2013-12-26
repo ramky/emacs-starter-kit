@@ -5,6 +5,11 @@
 ;; NB: js-mode is part of Emacs since version 23.2 (with an alias
 ;; javascript-mode). It is derived and updated from Espresso mode.
 
+;; Indent - Ram
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
+(setq indent-line-function 'insert-tab)
+
 (defvar esk-js-mode-hook nil)
 (defun run-esk-js-mode-hook ()
   (run-hooks 'esk-js-mode-hook))
