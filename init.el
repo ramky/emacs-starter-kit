@@ -25,6 +25,8 @@
 (add-to-list 'load-path dotfiles-dir)
 
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit"))
+(add-to-list 'load-path (concat dotfiles-dir "/vendor"))
+(add-to-list 'load-path (concat dotfiles-dir "/util"))
 
 (setq autoload-file (concat dotfiles-dir "loaddefs.el"))
 (setq package-user-dir (concat dotfiles-dir "elpa"))
@@ -62,6 +64,7 @@
 (require 'starter-kit-ruby)
 (require 'starter-kit-js)
 (require 'rspec-mode)
+(require 'inf-ruby)
 
 (add-to-list 'load-path "/Users/user/.emacs.d/")
 (require 'rinari)
