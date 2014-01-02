@@ -27,6 +27,7 @@
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit"))
 (add-to-list 'load-path (concat dotfiles-dir "/vendor"))
 (add-to-list 'load-path (concat dotfiles-dir "/util"))
+(add-to-list 'load-path (concat dotfiles-dir "/color-theme-6.6.0"))
 
 (setq autoload-file (concat dotfiles-dir "loaddefs.el"))
 (setq package-user-dir (concat dotfiles-dir "elpa"))
@@ -66,8 +67,11 @@
 (require 'rspec-mode)
 (require 'inf-ruby)
 
-(add-to-list 'load-path "/Users/user/.emacs.d/")
+;;(add-to-list 'load-path "/Users/user/.emacs.d/")
 (require 'rinari)
+
+;; color-themes
+(require 'color-theme)
 
 (regen-autoloads)
 (load custom-file 'noerror)
@@ -83,4 +87,5 @@
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 (if (file-exists-p user-specific-config) (load user-specific-config))
 
+(cua-mode 1)
 ;;; init.el ends here
