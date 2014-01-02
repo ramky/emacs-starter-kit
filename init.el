@@ -66,8 +66,7 @@
 (require 'starter-kit-js)
 (require 'rspec-mode)
 (require 'inf-ruby)
-
-;;(add-to-list 'load-path "/Users/user/.emacs.d/")
+(require 'web-mode)
 (require 'rinari)
 
 ;; color-themes
@@ -92,4 +91,7 @@
 
 ;; aspell on mac
 (setq ispell-program-name "aspell")
+
+;;(setq debug-on-error t)
+
 ;;; init.el ends here
