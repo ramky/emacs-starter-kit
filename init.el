@@ -87,5 +87,6 @@
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 (if (file-exists-p user-specific-config) (load user-specific-config))
 
+(setq cua-rectangle-mark-key (kbd "M-s"))
 (cua-mode 1)
 ;;; init.el ends here
