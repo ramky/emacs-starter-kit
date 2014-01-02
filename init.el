@@ -87,5 +87,6 @@
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 (if (file-exists-p user-specific-config) (load user-specific-config))
 
+;; enable meta-s to start rectangle
 (setq cua-rectangle-mark-key (kbd "M-s"))
 ;;; init.el ends here
