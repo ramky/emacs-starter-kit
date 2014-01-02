@@ -89,4 +89,7 @@
 
 ;; enable meta-s to start rectangle
 (setq cua-rectangle-mark-key (kbd "M-s"))
+
+;; aspell on mac
+(setq ispell-program-name "aspell")
 ;;; init.el ends here
