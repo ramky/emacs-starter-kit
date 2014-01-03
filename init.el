@@ -67,6 +67,7 @@
 (require 'rspec-mode)
 (require 'inf-ruby)
 (require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.html?$" . web-mode))
 (require 'rinari)
 
 ;; color-themes
@@ -93,5 +94,9 @@
 (setq ispell-program-name "aspell")
 
 ;;(setq debug-on-error t)
+
+;; remap bindings
+(global-set-key (kbd "C-s") 'save-buffer)
+(global-set-key (kbd "C-q") 'save-buffers-kill-emacs)
 
 ;;; init.el ends here
