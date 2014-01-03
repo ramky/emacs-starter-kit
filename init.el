@@ -64,11 +64,16 @@
 (require 'starter-kit-perl)
 (require 'starter-kit-ruby)
 (require 'starter-kit-js)
-(require 'rspec-mode)
-(require 'inf-ruby)
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.html?$" . web-mode))
-(require 'rinari)
+
+(add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
+(require 'yasnippet)
+(yas-global-mode 1)
+
+;;(require 'rinari)
+(require 'rspec-mode)
+(require 'inf-ruby)
 
 ;; color-themes
 (require 'color-theme)
@@ -93,10 +98,10 @@
 ;; aspell on mac
 (setq ispell-program-name "aspell")
 
-;;(setq debug-on-error t)
+(setq debug-on-error t)
 
 ;; remap bindings
-(global-set-key (kbd "C-s") 'save-buffer)
-(global-set-key (kbd "C-q") 'save-buffers-kill-emacs)
+(global-set-key (kbd "M-s") 'save-buffer)
+(global-set-key (kbd "M-q") 'save-buffers-kill-emacs)
 
 ;;; init.el ends here
