@@ -98,10 +98,10 @@
 ;; aspell on mac
 (setq ispell-program-name "aspell")
 
-(setq debug-on-error t)
+;;(setq debug-on-error t)
 
 ;; remap bindings
-(global-set-key (kbd "M-s") 'save-buffer)
-(global-set-key (kbd "M-q") 'save-buffers-kill-emacs)
+(global-set-key (kbd "M-C-s") 'save-buffer)
+(global-set-key (kbd "C-q") 'save-buffers-kill-emacs)
 
 ;;; init.el ends here
