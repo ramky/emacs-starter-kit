@@ -86,6 +86,9 @@
 ;; color-themes
 (require 'color-theme)
 
+;; quickmode
+(require 'quickrun)
+
 (regen-autoloads)
 (load custom-file 'noerror)
 
