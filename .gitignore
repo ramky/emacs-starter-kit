@@ -2,3 +2,4 @@ backups/*
 places
 auto-save-list/*
 eshell/*
+erlang/*

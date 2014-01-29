@@ -77,9 +77,12 @@
 
 ;; erlang
 ;; Erlang mode (installed via Homebrew)
-(setq load-path (cons "/usr/local/Cellar/erlang/R16B03/lib/erlang/lib/tools-2.6.13/emacs" load-path))
-(setq erlang-root-dir "/usr/local/Cellar/erlang/R16B03/lib/erlang/lib")
-(setq exec-path (cons "/usr/local/Cellar/erlang/R16B03/lib/erlang/bin" exec-path))
+;;(setq load-path (cons "/usr/local/Cellar/erlang/R16B03/lib/erlang/lib/tools-2.6.13/emacs" load-path))
+;;(setq erlang-root-dir "/usr/local/Cellar/erlang/R16B03/lib/erlang/lib")
+;;(setq exec-path (cons "/usr/local/Cellar/erlang/R16B03/lib/erlang/bin" exec-path))
+(setq load-path (cons "~/.emacs.d/erlang/emacs" load-path))
+(setq erlang-root-dir "~/.emacs.d/erlang/lib")
+(setq exec-path (cons "~/.emacs.d/erlang/bin" exec-path))
 (require 'erlang-start)
 (add-to-list 'auto-mode-alist '("\\.erl?$" . erlang-mode))
 
