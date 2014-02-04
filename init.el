@@ -67,6 +67,8 @@
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.html?$" . web-mode))
 
+;;  cd ~/.emacs.d/plugins
+;;  git clone --recursive https://github.com/capitaomorte/yasnippet
 (add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
 (require 'yasnippet)
 (yas-global-mode 1)
